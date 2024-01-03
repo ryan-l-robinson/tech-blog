@@ -1,18 +1,19 @@
 ---
-title: 'A11yTalks: Cognitive Ease'
-date: '2023-01-14T13:46:00-05:00'
-author: 'Ryan Robinson'
+title: "A11yTalks: Cognitive Ease"
+date: 2023-01-14T13:46:00-05:00
+author: Ryan Robinson
 layout: post
 permalink: /websites/cognitive-ease/
-image: 
+image:
   src: /assets/img/logo/Drupal.png
   width: 300
   height: 300
-  alt: "Drupal logo"
+  alt: Drupal logo
 categories:
   - Websites
 tags:
   - Accessibility
+lastmod: 2024-01-03T22:53:50.951Z
 ---
 
 A11yTalks had a great presentation this week about designing for cognitive load. It has a lot of valuable insights about ways that we can do much better with website design that goes beyond simply meeting the WCAG checklists. Check it out below:

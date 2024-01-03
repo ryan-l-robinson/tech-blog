@@ -1,11 +1,12 @@
 ---
-title: 'On Algorithms and Section 230'
-date: '2023-02-26T08:18:09-05:00'
-author: 'Ryan Robinson'
+title: On Algorithms and Section 230
+date: 2023-02-26T08:18:09-05:00
+author: Ryan Robinson
 layout: post
 permalink: /algorithms-section-230/
 categories:
-    - 'General Tech Tools'
+    - General Tech Tools
+lastmod: 2024-01-03T22:54:55.998Z
 ---
 
 

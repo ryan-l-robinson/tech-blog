@@ -1,17 +1,18 @@
 ---
-title: 'Composer: Options for a Submodule'
-date: '2023-07-09T14:12:00-05:00'
-author: 'Ryan Robinson'
+title: "Composer: Options for a Submodule"
+date: 2023-07-09T14:12:00-05:00
+author: Ryan Robinson
 layout: post
 permalink: /websites/drupal/composer-submodules/
-image: 
+image:
   src: /assets/img/logo/Drupal.png
   width: 300
   height: 300
-  alt: "Drupal logo"
+  alt: Drupal logo
 categories:
   - Websites
   - Drupal
+lastmod: 2024-01-03T23:01:15.016Z
 ---
 
 Suppose you want to tie in another private git package, such as something that is not listed on the Drupal directory - as part of your standard build process. Here are two approaches to do that:
@@ -98,4 +99,3 @@ This generates a .gitmodules file at the project root that looks something like 
 	path = web/modules/custom/demo-module
 	url = [URL to module]
 ```
-

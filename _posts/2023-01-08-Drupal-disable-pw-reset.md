@@ -1,19 +1,20 @@
 ---
-title: 'Drupal: Disable Password Reset'
-date: '2023-01-08T17:00:00-05:00'
-author: 'Ryan Robinson'
+title: "Drupal: Disable Password Reset"
+date: 2023-01-08T17:00:00-05:00
+author: Ryan Robinson
 layout: post
 permalink: /websites/drupal/disable-pw-reset/
-image: 
+image:
   src: /assets/img/logo/Drupal.png
   width: 300
   height: 300
-  alt: "Drupal logo"
+  alt: Drupal logo
 categories:
   - Websites
   - Drupal
 tags:
   - Security
+lastmod: 2024-01-03T22:52:19.842Z
 ---
 
 In one particular site, we chose to block the user registration and user password reset options. The site is using SSO login anyway, so this would really only impact our development team's superuser admin account (user 1) that is typically blocked outside of an emergency, so this seals up a possible attack vector with no user impact.

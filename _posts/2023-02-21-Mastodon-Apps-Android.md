@@ -13,7 +13,7 @@ keywords:
   - Mastodon
 type: default
 draft: false
-lastmod: 2023-02-21T23:56:10.613Z
+lastmod: 2024-01-03T22:53:59.095Z
 ---
 
 I've been enjoying my time on Mastodon since the recent migration from Twitter. Of course, I'm far from the only one to make this migration, and that includes a lot of developers, so we're starting to see a lot of better apps for Mastodon and the wider fediverse popping up. That has led me to an experience that has been very rare since about 2012: testing out and researching a variety of independent apps to meet a need. For years I've mostly just used whatever the official app is for whatever service (including Twitter), with really the only recent exception being when [I spent some time testing out alternative email apps](/android-email-apps/).

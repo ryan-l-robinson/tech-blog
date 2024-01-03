@@ -8,12 +8,12 @@ categories:
   - Websites
 tags:
   - Accessibility
-lastmod: 2023-06-28T22:34:36.214Z
+lastmod: 2024-01-03T22:59:29.349Z
 ---
 
 There's a tension in discussing accessibility for screen reader users that comes up sometimes. Most recently and perhaps most commonly is about ALT text, but it can also apply to other things, too. The main conflict is between:
 
-> You should provide lots of detail in order to make sure a blind user has acess to as much detail as a sighted user can. If you've got a picture of a cute cat, you provide all the details about the cat: colour, size, facial expression, posture in the shot, anything that a sighted user would be able to see.
+> You should provide lots of detail in order to make sure a blind user has access to as much detail as a sighted user can. If you've got a picture of a cute cat, you provide all the details about the cat: colour, size, facial expression, posture in the shot, anything that a sighted user would be able to see.
 
 Or:
 
