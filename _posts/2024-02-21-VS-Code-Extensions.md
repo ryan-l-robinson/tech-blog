@@ -3,7 +3,7 @@ title: "VS Code Extensions: My Workflows"
 date: 2024-02-21T14:31:00-04:00
 author: Ryan Robinson
 layout: post
-permalink: /websites/vs-code/extensions-2024
+permalink: /websites/vs-code/extensions-2024/
 image:
   src: /assets/img/logo/Visual-Studio-Code.png
   width: 300
@@ -13,7 +13,7 @@ categories:
   - Websites
 tags:
   - Visual Studio Code
-lastmod: 2024-02-21T19:32:55.374Z
+lastmod: 2024-02-21T19:38:20.438Z
 ---
 
 When it comes to my VS Code extensions, I have mine set up a few different ways depending on what kind of project I'm working on:
