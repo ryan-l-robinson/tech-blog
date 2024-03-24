@@ -152,6 +152,56 @@ EXPOSE 3306
 
 This is essentially no change from the previous one, just setting the environment variables to define the database and its access.
 
+## Docker Compose
+
+The docker compose file is not doing anything too unusual. The main thing of note is the volumes. I do not have the entire /opt/drupal set up as volumes. That's because when you attach to it, the entire area would get its permissions reassigned back to root, which causes issues. It's also not very efficient, since I really don't need things like the core files and contributed modules in the vendor folder to be persistent. So instead, it defines the pieces that are relevant to be able to build it, as well as the private and public folders where I might want to download a file for testing that the site can use.
+
+I also have it set up to share my user profile's SSH keys and preferred settings like the my commit name, so that I can connect to the repository without having to configure it all again with every new build.
+
+```yml
+version: "3.9"
+services:
+  web:
+    hostname: "web"
+    container_name: "web"
+    build:
+      context: ".devcontainer"
+      dockerfile: "web.Dockerfile"
+    ports:
+      - "443:443"
+    volumes:
+      - "./.devcontainer/:/opt/drupal/.devcontainer/"
+      - "./.git/:/opt/drupal/.git/"
+      - "./.gitignore:/opt/drupal/.gitignore"
+      - "./.vscode/:/opt/drupal/.vscode/"
+      - "./patches/:/opt/drupal/patches/"
+      - "./private/:/opt/drupal/private/"
+      - "./sync/:/opt/drupal/sync/"
+      - "./web/sites/default/files/:/opt/drupal/web/sites/default/files/"
+      - "./composer.json:/opt/drupal/composer.json"
+      - "./composer.lock:/opt/drupal/composer.lock"
+      - "./docker-compose.yml:/opt/drupal/docker-compose.yml"
+      - "./README.md:/opt/drupal/README.md"
+      - "${USERPROFILE}/.ssh/:/user/www-data/.ssh/"
+      - "${USERPROFILE}/.gitconfig:/user/www-data/.gitconfig"
+    user: "www-data:www-data"
+    depends_on:
+      - db
+    networks:
+      - "drupal"
+  db:
+    hostname: "db"
+    container_name: "db"
+    build:
+      context: ".devcontainer"
+      dockerfile: "db.Dockerfile"
+    networks:
+      - "drupal"
+
+networks:
+  drupal:
+```
+
 ## Next Post
 
 In the next post, I'll mention some of the changes to the devcontainer.json file and to the postCreateCommand script, although there's nothing too drastic there.
